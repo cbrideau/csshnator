@@ -3,6 +3,13 @@
 cssh for terminator to manager a cluster of nodes through ssh connections
 launches multiple splits with ssh connections to each node
 
+## CSSHY
+
+I'm working in a replacement for csshnator, with improved configuration file, improved command line arguments, and support for multiple terminals (it's already working with Tilix and Terminator, with a cssh fallback). It's still alpha quality, but is already working fine here.
+
+Try it here: https://github.com/thor27/csshy
+
+
 ## Requirements
 
 Only for Terminator 0.98+
