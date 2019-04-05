@@ -46,7 +46,7 @@ For more usage information you can consult the help:
 ```
 ./csshnator --help
 
-usage: csshnator [-h] [-l LOGIN] [-c CLUSTER_NAME]
+usage: csshnator [-h] [-l LOGIN] [-p PROFILE] [-s] [-c CLUSTER_NAME]
                  [cluster_nodes [cluster_nodes ...]]
 
 Open ClusterSSH-like session on Terminator
