@@ -59,6 +59,8 @@ optional arguments:
   -h, --help            show this help message and exit
   -l LOGIN, --login LOGIN
                         Login username to pass to all hosts used.
+  -p PROFILE, --profile PROFILE
+                        Profile to use in terminator
   -c CLUSTER_NAME, --cluster-name CLUSTER_NAME
                         Cluster name is a collection of hosts available on
                         ~/.csshnatorrc file

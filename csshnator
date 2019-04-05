@@ -36,6 +36,15 @@ def parse_args(argv):
     )
 
     parser.add_argument(
+        '-p',
+        '--profile',
+        dest='profile',
+        type=str,
+        default="default",
+        help='Profile to use in terminator'
+    )
+
+    parser.add_argument(
         '-s',
         '--show',
         dest='show',
@@ -76,6 +85,7 @@ def main(argv):
         exit()
 
     cluster_name, login = args.cluster_name, args.login
+    profile = args.profile
 
     width = gtk.gdk.screen_width()
     height = gtk.gdk.screen_height()
@@ -189,7 +199,7 @@ def main(argv):
             term = term_name + str(row) + str(col)
             cssh_layout[term] = {
                 "command": command,
-                "profile": "default",
+                "profile": profile,
                 "type": "Terminal",
                 "order": order,
                 "parent": termparent,
